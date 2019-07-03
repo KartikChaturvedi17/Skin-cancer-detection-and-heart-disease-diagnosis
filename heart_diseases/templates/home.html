@@ -1,0 +1,79 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+
+    <div>
+    
+    <h2>How healthy is your heart?</h2>
+    
+    
+    <form action="{{ url_for('predict')}}" method="POST">
+      Gender:<br>
+      <input type="radio" name="Sex_male" value="1" checked>Male<br>
+      <input type="radio" name="Sex_male" value="0">Female<br> <br>
+
+      
+		
+      
+      Age:
+      <input type="text" name="age"><br><br>
+      
+      Education:<br>
+      <input type="radio" name="education" value="1" checked> Passes Class 5<br>
+      <input type="radio" name="education" value="2"> Passes Class 10<br>
+      <input type="radio" name="education" value="3"> Passed Class 12<br>  
+      <input type="radio" name="education" value="4"> Graduation<br>
+      <input type="radio" name="education" value="5"> Post Graduation <br> <br>
+      
+      Current Smoker:<br>
+      <input type="radio" name="currentSmoker" value="1" checked> Yes<br>
+      <input type="radio" name="currentSmoker" value="0"> No <br><br>
+      
+      If Smoker, number of cigarettes per day:
+      <input type="text" name="cigsPerDay"><br><br>
+      
+      Do you consume BP medicines? <br>
+      <input type="radio" name="BPMeds" value="1" checked> Yes<br>
+      <input type="radio" name="BPMeds" value="0"> No<br><br>
+      
+      Have there been prevalent strokes? <br>
+      <input type="radio" name="prevalentStroke" value="1" checked> Yes<br>
+      <input type="radio" name="prevalentStroke" value="0"> No<br><br>
+      
+      Is there prevalent hypertension? <br>
+      <input type="radio" name="prevalentHyp" value="1" checked> Yes<br>
+      <input type="radio" name="prevalentHyp" value="0"> No<br><br>
+      
+      Are you diabetic? <br>
+      <input type="radio" name="diabetes" value="1" checked> Yes<br>
+      <input type="radio" name="diabetes" value="0"> No <br><br>
+      
+      Total Cholestrol: 
+      <input type="text" name="totChol"><br><br>
+      
+      Systolic blood pressure:
+      <input type="text" name="sysBP"><br><br>
+      
+      Diastolic blood pressure: 
+      <input type="text" name="diaBP"><br><br>
+      
+      Body Mass Index: 
+      <input type="text" name="BMI"><br><br>
+      
+      Heart Rate:
+      <input type="text" name="heartRate"><br><br>
+      
+      Glucose: 
+      <input type="text" name="glucose"><br><br>
+      
+      Coronary Heart Disease Risk:<br> 
+      <input type="radio" name="TenYearCHD" value="1" checked> Yes<br>
+      <input type="radio" name="TenYearCHD" value="0"> No<br><br>
+       
+      
+      
+      <input type="submit" value="Submit">
+    </form> 
+    
+    </div>
+    
+    </body></html>

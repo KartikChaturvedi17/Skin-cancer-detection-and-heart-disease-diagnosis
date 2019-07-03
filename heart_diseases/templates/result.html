@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Your results
+		</div>
+		
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+            {% if prediction == 1%}
+            <h2 style="color:red;">Might have a risk of heart disease in next 10 years</h2>
+            {% elif prediction == 0%}
+            <h2 style="color:blue;"> Dont have risk of heart diseases</h2>
+            {% endif %}
+        
+            </div>
+        
+        </body>
+        </html>
